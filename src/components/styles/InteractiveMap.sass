@@ -1,9 +1,72 @@
+
 .interactive-map-cont
-    border: 2px solid red 
+    width: 65%
     display: flex 
     justify-content: center 
-    .interactive-map-box
-        width: 90%
+    border: 1px solid blue 
+    display: grid
+    grid-gap: 0.2rem 0.2rem 
+    grid-template-columns: repeat(8, 1fr)
+    grid-template-rows: repeat(9, 50px)
+    .zone
         display: flex 
         justify-content: center 
-        border: 1px solid blue 
+        align-items: center 
+        border: 1px solid #bdbdbd
+        transition: background-color 0.3s ease-out
+        &:hover
+            cursor: pointer
+            border: 2px solid #bdbdbd
+            background-color: #bdbdbd
+    .staged
+        display: flex 
+        justify-content: center 
+        align-items: center 
+        border: 2px solid #bdbdbd
+        grid-area: 1 / 4 / 1 / 6
+    .general
+        grid-area: 2 / 3 / 8 / 7
+    .a100
+        grid-area: 2 / 2 / 4 / 3
+    .a200
+        grid-area: 2 / 1 / 4 / 2
+    .a101
+        grid-area: 4 / 2 / 6 / 3
+    .a201
+        grid-area: 4 / 1 / 6 / 2
+    .a102
+        grid-area: 6 / 2 / 8 / 3
+    .a202
+        grid-area: 6 / 1 / 8 / 2
+    .a103
+        grid-area: 8 / 2 / 9 / 3
+    .a203
+        grid-area: 9 / 2 / 10 / 3
+    .a104
+        grid-area: 8 / 3 / 9 / 4
+    .a204
+        grid-area: 9 / 3 / 10 / 5
+
+    .b100
+        grid-area: 2 / 8 / 4 / 7
+    .b200
+        grid-area: 2 / 9 / 4 / 8
+    .b101
+        grid-area: 4 / 8 / 6 / 7
+    .b201
+        grid-area: 4 / 9 / 6 / 8
+    .b102
+        grid-area: 6 / 8 / 8 / 7
+    .b202
+        grid-area: 6 / 8 / 8 / 9
+    .b103
+        grid-area: 8 / 8 / 9 / 7
+    .b203
+        grid-area: 9 / 8 / 10 / 7
+    .b104
+        grid-area: 8 / 6 / 9 / 7
+    .b204
+        grid-area: 9 / 5 / 10 / 7
+    .c100
+        grid-area: 8 / 4 / 9 / 6
+            
